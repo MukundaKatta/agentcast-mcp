@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.MukundaKatta/agentcast",
-  "description": "MCP server: structured-output enforcer. Extract JSON from messy LLM output, validate against a shape spec, and produce retry feedback when the model returns the wrong shape.",
+  "description": "Structured-output enforcer: extract and validate JSON from messy LLM text.",
   "version": "0.1.0",
   "repository": {
     "url": "https://github.com/MukundaKatta/agentcast-mcp",
