@@ -1,0 +1,58 @@
+{
+  "name": "@mukundakatta/agentcast-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.MukundaKatta/agentcast",
+  "description": "MCP server: structured-output enforcer. Extract JSON from messy LLM output, validate against a shape spec, and produce retry feedback when the model returns the wrong shape. Wraps @mukundakatta/agentcast.",
+  "type": "module",
+  "bin": {
+    "mcp-agentcast": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "node --test --import tsx test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "cline",
+    "windsurf",
+    "zed",
+    "agentcast",
+    "structured-output",
+    "json",
+    "validation",
+    "llm",
+    "retry"
+  ],
+  "author": "Mukunda Katta <mukunda.vjcs6@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/MukundaKatta/agentcast-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MukundaKatta/agentcast-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@mukundakatta/agentcast": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
